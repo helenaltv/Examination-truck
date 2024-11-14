@@ -1,0 +1,179 @@
+:root {
+  --snow: #f4f3f1;
+  --ash: #eeeeee;
+  --clay: #605858;
+  --coal: #353131;
+  --dark-mint: #489078;
+  --red: #eb5757;
+  --shade-24-dark: rgba(53, 49, 49, 0.24);
+  --shade-24-light: rgba(241, 240, 236, 0.24);
+  --shade-12-light: rgba(241, 240, 236, 0.12);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--dark-mint);
+  color: var(--snow);
+  text-shadow: 1px 1px 2px #00000066;
+}
+
+/* globals.css eller en annan CSS-fil som är globalt applicerad */
+
+.app-header nav ul {
+  list-style-type: none; /* Tar bort punkterna från listan */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Avstånd mellan menyalternativen */
+}
+
+.app-header nav ul li {
+  display: inline;
+}
+
+.app-header nav ul li a {
+  text-decoration: none; /* Tar bort understrykningen från länkar */
+  color: var(--snow); /* Ställer in textfärgen på länkarna */
+  font-weight: bold;
+}
+
+.app-header nav ul li a:hover {
+  color: var(--dark-mint); /* Lägg till en hover-effekt om du vill */
+}
+
+.logo-link {
+  text-decoration: none; /* Tar bort understrykningen */
+  color: inherit; /* Ärver färgen från omgivande element */
+}
+
+.logo-link h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--snow); /* Justera färgen på logotypen */
+  margin: 0;
+  padding: 0;
+}
+
+.menu-page {
+  padding: 16px;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--red);
+  color: var(--coal);
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}
+
+.wonton-section .menu-item-card {
+  background-color: var(--clay);
+  color: var(--snow);
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px dotted var(--ash);
+  cursor: pointer;
+}
+
+.wonton-section .menu-item-card.active {
+  background-color: var(--coal);
+}
+.menu-item-card {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  background-color: var(--clay);
+  color: var(--snow);
+  border: 1px dotted var(--ash);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item-card.active {
+  background-color: var(--coal); /* Mörkare färg för valda objekt */
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: -20px;
+  border-bottom: 1px dotted var(--ash);
+}
+
+.item-description {
+  color: var(--ash); /* Set ingredients text color to clay */
+  font-size: 0.9rem;
+}
+
+section {
+  background-color: var(--clay);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  box-shadow: 0px 4px 8px var(--shade-24-dark); /* Subtle shadow for depth */
+}
+
+/* Dip and Drink Section Headers */
+section h3 {
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  border-bottom: 1px dotted var(--ash); /* Dotted line for section headers */
+}
+
+/* Dip and Drink Options */
+.options-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.option-button {
+  background-color: var(--ash);
+  color: var(--coal);
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-align: center;
+  cursor: pointer;
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.option-button.active {
+  background-color: var(--coal);
+  color: var(--snow);
+  font-weight: bold;
+}

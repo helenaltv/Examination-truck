@@ -1,0 +1,29 @@
+.cart-div {
+  display: flex;
+  margin-left: 90%;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-icon button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #f4f3f1;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--red);
+  color: var(--snow);
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+}

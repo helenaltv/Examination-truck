@@ -1,0 +1,12 @@
+.menuPage {
+  background-color: #2b6c6f;
+  padding: 16px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Add additional styles for the components on this page */

@@ -1,0 +1,65 @@
+:root {
+  --snow: #f4f3f1;
+  --ash: #eeeeee;
+  --clay: #605858;
+  --coal: #353131;
+  --dark-mint: #489078;
+  --red: #eb5757;
+  --shade-24-dark: rgba(53, 49, 49, 0.24);
+  --shade-24-light: rgba(241, 240, 236, 0.24);
+  --shade-12-light: rgba(241, 240, 236, 0.12);
+}
+/* src/styles/cart.css */
+.cart {
+  padding: 20px;
+  background-color: #f4f3f1;
+  border: 1px solid #eeeeee;
+  max-width: 400px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+.cart h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart-items {
+  margin-bottom: 20px;
+  color: var(--coal);
+}
+
+.cart-total {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.total-info {
+  background-color: rgba(53, 49, 49, 0.24); /* Bakgrundsfärg */
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  color: var(--coal);
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 30px 0;
+  background-color: #353131;
+  color: #f4f3f1;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.checkout-button:hover {
+  background-color: #282828;
+}
