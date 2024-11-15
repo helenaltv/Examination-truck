@@ -3,8 +3,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, ReactNode } from "react";
-import { CartProduct } from "../models";
-
+import { CartProduct } from "../models/CartProduct";
 interface CartContextType {
   cartItems: CartProduct[];
   addToCart: (item: CartProduct) => void;

@@ -32,7 +32,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                     <Link href="/cart"></Link>
                   </li>
                   <li>
-                    <Link href="/preparing-order">Orderstatus</Link>
+                    <Link href="/preparing-order"></Link>
                   </li>
                 </ul>
               </nav>
